@@ -40,6 +40,7 @@ html,body{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
 }
 .navbar{
     margin: 0;
@@ -152,13 +153,6 @@ html,body{
     line-height: 35px;
     color: #a1a1a1;
 }
-.sec02-water{
-    padding-top: 90px;
-}
-.water{
-    width: 100%;
-    height: 600px;
-}
 .sec02-sub-text{
     padding-top: 15%;
 }
@@ -203,107 +197,47 @@ hr{
     width: 100%;
     height: auto;
     background:#e1e1e1;
-    padding-bottom: 5%;
+    padding-bottom: 50px;
 }
 .sec03-text{
     font-weight: bold;
     font-size: 45px;
-    padding-top: 50px;
+    padding-top: 80px;
     line-height: 55px;
 }
-.memo{
-    font-size: 30px;
-    font-weight: bold;
-    padding-top: 35%;
-    padding-left: 250px;
-}
-.sec02-subtext{
+.sec03-subtext{
     font-size: 25px;
-    font-weight: bold;
-    color: #333;
-    padding-bottom: 30px;
+    padding-top: 5px;
 }
-.sec03-subcontent{
-    padding-top: 15%;
-}
-.daily-img{
-    width: 55%;
-}
-.daily-img img{
+.watch_img {
     width: 100%;
-    height: 100%;
-}
-.myday{
-    width: 55%;
-    height: 700px;
-    padding-top: 50px;
-}
-.myday img{
-    width: 90%;
-    height: 100%;
-}
-@import "lesshat";
-
-.ba-slider {
-    width: 80%;
-    height: 550px;
     position: relative;
-    overflow: hidden;
-    margin: 0 auto;
+    padding-top: 30px;
 }
-.ba-slider img {
-    width: 100%;
-    height: 100%;
-    display:block;
+.img1{
+    width: 60%;
+    animation: app 3s infinite;
 }
-.resize {
+@keyframes app
+
+{
+
+0%{transform:translateY(10px);}
+
+50%{transform:translateY(-20px);}
+
+100%{transform:translateY(10px);}
+
+}
+.img2{
+    width: 270px;
     position: absolute;
-    top:0;
-    left: 0;
-    height: 100%;
-    width: 50%;
-    overflow: hidden;
+    left: 680px;
+    top: 70px;
 }
-.handle { /* Thin line seperator */
-  position:absolute; 
-  left:50%;
-  top:0;
-  bottom:0;
-  width:4px;
-  margin-left:-2px;
-  background: rgba(0,0,0,.5);
-  cursor: ew-resize;
-}
-.handle:after {  /* Big orange knob  */
-    position: absolute;
-    top: 50%;
-    width: 64px;
-    height: 64px;
-    margin: -32px 0 0 -32px;
- 
-    content:'\21d4';
-    color:#ccc;
-    font-weight:bold;
-    font-size:36px;
-    text-align:center;
-    line-height:64px;
- 
-    background: #333; /* @orange */
-    border:1px solid #333; /* darken(@orange, 5%) */
-    border-radius: 50%;
-    transition:all 0.3s ease;
-    box-shadow:
-      0 2px 6px rgba(0,0,0,.3), 
-      inset 0 2px 0 rgba(255,255,255,.5),
-      inset 0 60px 50px -30px #333; /* lighten(@orange, 20%)*/ 
-}
-.draggable:after {
-    width: 48px;
-    height: 48px;
-    margin: -24px 0 0 -24px;
-    line-height:48px;
-    font-size:30px;
-}
+/* section03 end */
+
+
 #section04{
     width: 100%;
     height: auto;
@@ -350,6 +284,10 @@ hr{
 .pink41:hover a{
     z-index: 99;
 }
+#section04 a{
+    text-decoration: none;
+    color: inherit;
+}
 .gradient-border {
     margin: 0 auto;
     --border-width: 1px;
@@ -361,7 +299,6 @@ hr{
     height: 40px;
     font-family: Lato, sans-serif;
     font-size: 18px;
-    color: inherit;
     background: #fff;
     border-radius: 40px;
   }
@@ -387,7 +324,7 @@ hr{
     background-size: 300% 300%;
     background-position: 0 50%;
     border-radius: calc(50 * var(--border-width));
-    animation: moveGradient 4s alternate infinite;
+    animation: moveGradient 3s alternate infinite;
   }
 @keyframes moveGradient {
   50% {
@@ -474,6 +411,7 @@ hr{
     .sec02-text{
         font-size: 35px;
     }
+    
     .content01-img:hover{
         border: none;
         border-radius: 0px;
@@ -493,25 +431,55 @@ hr{
         box-shadow: 0 0 0 #fff;
         transition: 0.1s;
     }
-    .sec03-text{
-        font-size: 35px;
+    .well{
+        width: 100%;
     }
-    .memo{        
-        padding-top: 20%;
-        padding-left: 0px;
+    .align{
         text-align: center;
     }
-    .daily-img img{
-        width: 100%;
-        height: 550px;
+    .align h2{
+        font-size: 25px;
+        padding-bottom: 15px;
     }
-    .daily-img{
+    .sec02-txt{
+        font-size: 16px;
+    }
+    .help{
         width: 100%;
     }
+    .sleep{
+        width: 100%;
+    }
+    /* section02 end */
+
+
+    .sec03-text{
+        font-size: 35px;
+        padding-top: 50px;
+    }
+    .sec03-subtext{
+        font-size: 20px;
+        padding-top: 0;
+        padding-bottom: 50px;
+    }
+    .img1{
+        width: 100%;
+    }
+    .img2{
+        width: 150px;
+        left: 150px;
+        top: 15px;
+    }
+/* section03 end */
+
     .col-md-3{
         width: 80%;
         margin: 0 auto;
         margin-bottom: 30px;
         font-size: 20px;
     }
+}
+
+.sec04-text{
+    font-size: 35px;
 }
