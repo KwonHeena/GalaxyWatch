@@ -2,10 +2,37 @@ html,body{
     font-family: 'NanumSquare', sans-serif !important; 
     overflow-x: hidden;
 }
-.row{
-    margin-left: 0;
-    margin-right: 0;
+/* 탑 이동 키 */
+#scrollTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    z-index: 99;
+    border: 1px;
+    border-style: solid;
+    border-color: rgba(77,77,77,0.1);
+    outline: none;
+    background-color: #212121;
+    color: #ffffff;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 8px 15px;
+    border-radius: 20px;
 }
+.top{
+    position: absolute;
+    z-index: 99;
+}
+/* PC 탑 버튼 Hover */
+#scrollTopBtn:hover {
+    background-color: lightskyblue;
+    border: 1px;
+    border-style: solid; 
+    border-color: rgba(77,77,77,0.1);
+}
+/* 탑 이동 키 끝 */
 #section01{
     background: url(../images/bg.webp);
     width: 100%;
@@ -23,6 +50,7 @@ html,body{
 }
 .main-text{
     padding-top: 120px;
+    
 }
 .big-text{
     font-size: 45px;
@@ -187,7 +215,7 @@ hr{
     font-size: 30px;
     font-weight: bold;
     padding-top: 35%;
-    padding-left: 180px;
+    padding-left: 250px;
 }
 .sec02-subtext{
     font-size: 25px;
@@ -207,7 +235,7 @@ hr{
 }
 .myday{
     width: 55%;
-    height: 680px;
+    height: 700px;
     padding-top: 50px;
 }
 .myday img{
@@ -276,50 +304,172 @@ hr{
     line-height:48px;
     font-size:30px;
 }
-
 #section04{
     width: 100%;
     height: auto;
-    background:#fff;
+    padding: 60px 0 90px 0;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .sec04-text{
     font-weight: bold;
     font-size: 45px;
-    padding-top: 50px;
+    padding-bottom: 50px;
 }
-.carousel-control {
-    text-shadow: 0 1px 2px rgba(0,0,0,1);
+.galaxy-watch-text{
+    padding-top: 30px;
 }
-.carousel-control.right {
-    background-image: -webkit-linear-gradient(left,rgba(0,0,0,0) 0,rgba(0,0,0,0) 100%);
+.galaxy-watch-text p{
+    padding-bottom: 10px;
 }
-.carousel-control.left {
-    background-image: -webkit-linear-gradient(left,rgba(0,0,0,0) 0,rgba(0,0,0,0) 100%);
+.galaxy-watch-img img{
+    width: 80%;
 }
-a{
+.black45 img{
+    width: 85%;
+}
+.silver45 img{
+    width: 85%;
+}
+.galaxy-watch-text>a{
     color: inherit;
+    text-decoration: none;
+    border: 1px solid #333;
+    padding: 7px 15px;
+    border-radius: 30px;
 }
-#slide_wrap{
-    width: 1200px;
-    height: 100%;
-    overflow: hidden;
+.pink41{
+    border: 1px solid #333;
+    border-radius: 40px;
+    padding: 15px 5px;
+    transition: all 0.5s ease-in-out;
+}
+.pink41:hover a{
+    z-index: 99;
+}
+.gradient-border {
     margin: 0 auto;
-}
-.slide_box ul li{
-    list-style: none;
-}
-.slide_box{
-    overflow: hidden;
-}
-.slide_box ul{
+    --border-width: 1px;
+    position: relative;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 40px;
+    font-family: Lato, sans-serif;
+    font-size: 18px;
+    color: inherit;
+    background: #fff;
+    border-radius: 40px;
+  }
+  .gradient-border::after {
+    position: absolute;
+    content: "";
+    top: calc(-0.9 * var(--border-width));
+    left: calc(-1 * var(--border-width));
+    z-index: -1;
+    width: calc(100% + var(--border-width) * 2);
+    height: calc(100% + var(--border-width) * 2);
+    background: linear-gradient(
+      60deg,
+      hsl(224, 85%, 66%),
+      hsl(269, 85%, 66%),
+      hsl(314, 85%, 66%),
+      hsl(359, 85%, 66%),
+      hsl(44, 85%, 66%),
+      hsl(89, 85%, 66%),
+      hsl(134, 85%, 66%),
+      hsl(179, 85%, 66%)
+    );
+    background-size: 300% 300%;
+    background-position: 0 50%;
+    border-radius: calc(50 * var(--border-width));
+    animation: moveGradient 4s alternate infinite;
+  }
+@keyframes moveGradient {
+  50% {
+    background-position: 100% 50%;
+  }
 }
-.slide_box ul li a img{
-    border: 0;
-    width: 1100px;
-    height: 650px;
-    transition: 1s;
+.pink41:hover{
+    background-color: #e9cccf;
+    transition: all 0.3s ease-in-out;
 }
+.silver41{
+    border: 1px solid #333;
+    border-radius: 40px;
+    padding: 20px 10px;
+    transition: all 0.5s ease-in-out;
+}
+.silver41:hover a{
+    z-index: 99;
+}
+.silver41:hover{
+    background: #ccc;
+    transition: all 0.3s ease-in-out;
+}
+.black45{
+    border: 1px solid #333;
+    border-radius: 40px;
+    padding: 20px 10px;
+    transition: all 0.5s ease-in-out;
+}
+.black45:hover a{
+    z-index: 99;
+}
+.black45:hover{
+    background-color: lightblue;
+    transition: all 0.3s ease-in-out;
+}
+.silver45{
+    border: 1px solid #333;
+    border-radius: 40px;
+    padding: 20px 10px;
+    transition: all 0.5s ease-in-out;
+}
+.silver45:hover a{
+    z-index: 99;
+}
+.silver45:hover{
+    background-color: #ccc;
+    transition: all 0.3s ease-in-out;
+}
+.col-md-3{
+    width: 24%;
+    margin: 0 5px;
+}
+/* ------------------ section04 end ------------------*/
+
+#section05{
+    width: 100%;
+    height: 400px;
+    background: url(../images/band.jpg) no-repeat;
+    background-position: center bottom;
+    background-attachment: fixed;
+}
+.border-box{
+    width: 350px;
+    height: 230px;
+    border: none;
+    padding-top: 5px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    position: relative;
+    top: 80px;
+}
+.border-box p{
+    font-size: 20px;
+}
+#section06{
+    width: 100%;
+    height: 500px;
+    background: coral;
+}
+
 @media(max-width: 767px){
     .sec02-text{
         font-size: 35px;
@@ -358,54 +508,10 @@ a{
     .daily-img{
         width: 100%;
     }
-    .watch{
-        width: 220px;
+    .col-md-3{
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        font-size: 20px;
     }
-    .map{
-        width: 60px;
-        position: relative;
-        left: 40px;
-        top: 250px;
-        animation: icon 3s infinite;
-    }
-    .t{
-        width: 60px;
-        position: relative;
-        left: 50px;
-        top: 500px;
-        animation: icon 3s infinite;
-    }
-    .melon{
-        width: 60px;
-        position: relative;
-        left: 0px;
-        bottom: 0px;
-        top: 250px;
-        animation: icon 3s infinite;
-    }
-    .a{
-        width: 60px;
-        position: relative;
-        top: -380px;
-        left: 310px;
-        animation: icon 3s infinite;
-    }
-    .wear{
-        width: 60px;
-        position: relative;
-        top: -300px;
-        left: 350px;
-        animation: icon 3s infinite;
-    }
-    .gini{
-        width: 60px;
-        position: relative;
-        top: -200px;
-        left: 320px;
-        animation: icon 3s infinite;
-    }
-    .sec04-content{
-        position: relative;
-    }
-   
 }

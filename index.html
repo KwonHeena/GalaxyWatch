@@ -52,7 +52,22 @@
                 </div>
             </div>
         </div>
+        <div class="top">
+            <button onclick="topFunction()" id="scrollTopBtn" title="Go to top">Top</button>
+        </div>
     </section>
+    <script>
+        window.onscroll = function() {scrollFunction()};
+    
+        function scrollFunction() {
+        var $element = matchMedia("screen and (min-width: 786px)").matches ? document.getElementById("scrollTopBtn") : document.getElementById("scrollTopBtnMob");
+        $element.style.display = (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) ? 'block' : 'none';
+        }
+        
+        function topFunction() {
+            $('html,body').animate({ scrollTop: 0 }, 500);
+        }
+    </script>
     <!-- section01 end-->
     <section id="section02">
         <div class="container padding">
@@ -133,17 +148,20 @@
             <div class="row">
                 <h1 class="sec03-text text-center">라이프 스타일 최적화 "데일리브리핑"</h1>
                 <p class="sec02-subtext text-center">설레는 일정으로 가득 찬 나의 하루를 확인하세요.</p></div>
-                <div class="col-sm-5"><p class="memo" data-aos="fade-right" data-aos-duration="2000">- 외출 전 날씨 확인!<br>
-                    - 오늘 하루 일정 확인!<br>
-                    - 하루 마감 전 운동량 확인!</p>
-                </div>
-                <div class="col-sm-8 daily-img">
-                    <div class="ba-slider" data-aos="fade-left" data-aos-duration="3000">
-                        <img src="images/left.jpg" alt="">       
-                        <div class="resize">
-                        <img src="images/right.jpg" alt="">
+                <div class="col-sm-11 flex">
+                    <div class="text">
+                        <p class="memo" data-aos="fade-right" data-aos-duration="3000">- 외출 전 날씨 확인!<br>
+                            - 오늘 하루 일정 확인!<br>
+                            - 하루 마감 전 운동량 확인!</p>
+                    </div>
+                    <div class="daily-img">
+                        <div class="ba-slider" data-aos="fade-left" data-aos-duration="3000">
+                            <img src="images/left.jpg" alt="">       
+                            <div class="resize">
+                            <img src="images/right.jpg" alt="">
+                            </div>
+                            <span class="handle"></span>
                         </div>
-                        <span class="handle"></span>
                     </div>
                 </div>
             </div>
@@ -152,144 +170,71 @@
     <!-- section03 end-->
     <section id="section04">
         <div class="container">
-            <h1 class="sec04-text text-center">더 많은 갤럭시 워치3를 만나보세요!</h1>  
-            <div id="slide_wrap">
-                <!-- <div class="slide_box">
-                    <ul>
-                        <li><a href="#"><img src="images/img1.jpg" alt="슬라이드1"></a></li>
-                        <li><a href="#"><img src="images/img2.jpg" alt="슬라이드2"></a></li>
-                        <li><a href="#"><img src="images/img3.jpg" alt="슬라이드3"></a></li>
-                        <li><a href="#"><img src="images/img4.jpg" alt="슬라이드4"></a></li>
-                        <li><a href="#"><img src="images/img5.jpg" alt="슬라이드5"></a></li>
-                        <li><a href="#"><img src="images/img6.jpg" alt="슬라이드6"></a></li>
-                        <li><a href="#"><img src="images/img7.jpg" alt="슬라이드6"></a></li>
-                    </ul>
+            <h1 class="sec04-text text-center">취향에 맞게 색상을 선택하세요.</h1>  
+            <div class="row text-center">
+                <div class="col-md-3 pink41">
+                    <div class="galaxy-watch-img">
+                        <img src="images/pink.png" alt="미스틱브론즈" >
+                    </div>
+                    <div class="galaxy-watch-text">
+                        <p>미스틱 브론즈 41mm</p>
+                    </div>
+                    <a href="https://www.samsung.com/sec/wearables/galaxy-watch3-r850/SM-R850NZDAKOO/" target="_blank" class="gradient-border"><span>구매하기</span></a>
                 </div>
-            </div> -->
-            <div class="col-sm-12 text-center"><a href="https://www.samsung.com/sec/eventList/galaxy_watch3_launching/" target="_blank"><button>구매하러가기</button></a></div>
+                <div class="col-md-3 silver41">
+                    <div class="galaxy-watch-img">
+                        <img src="images/silver41.png" alt="" >
+                    </div>
+                    <div class="galaxy-watch-text">
+                        <p>미스틱 실버 41mm</p>
+                    </div>
+                    <a href="https://www.samsung.com/sec/wearables/galaxy-watch3-r850/SM-R850NZSAKOO/" target="_blank" class="gradient-border">구매하기</a>
+                </div>
+                <div class="col-md-3 black45">
+                    <div class="galaxy-watch-img">
+                        <img src="images/black.png" alt="" >
+                    </div>
+                    <div class="galaxy-watch-text">
+                        <p>미스틱 블랙 45mm</p>
+                    </div>
+                    <a href="https://www.samsung.com/sec/wearables/galaxy-watch3-r840/SM-R840NZKAKOO/" target="_blank" class="gradient-border">구매하기</a>
+                </div>
+                <div class="col-md-3 silver45">
+                    <div class="galaxy-watch-img">
+                        <img src="images/silver45.png" alt="" >
+                    </div>
+                    <div class="galaxy-watch-text">
+                        <p>미스틱 실버 45mm</p>
+                    </div>
+                    <a href="https://www.samsung.com/sec/wearables/galaxy-watch3-r840/SM-R840NZSAKOO/" target="_blank" class="gradient-border">구매하기</a>
+                </div>
+            </div>
         </div>
     </section>
-    <script>
-    $(function(){
-        setInterval(function(){
-            $(".slide_box").delay("2500");
-            $(".slide_box").animate({
-                marginLeft: "-1100px"
-            }, 500);
-            $(".slide_box").delay("2500");
-            $(".slide_box").animate({
-                marginLeft: "-2200px"
-            }, 500);
-            $(".slide_box").delay("2500");
-            $(".slide_box").animate({
-                marginLeft: "-3300px"
-            }, 500);
-            $(".slide_box").delay("2500");
-            $(".slide_box").animate({
-                marginLeft: "-4400px"
-            }, 500);
-            $(".slide_box").delay("2500");
-            $(".slide_box").animate({
-                marginLeft: "-5500px"
-            }, 500);
-            $(".slide_box").delay("2500");
-            $(".slide_box").animate({
-                marginLeft: "-6600px"
-            }, 500);
-            $(".slide_box").delay("2500");
-            $(".slide_box").animate({
-                marginLeft: "0px"
-            }, 500);
-        });
-    })
-    </script>
-    
-   <script>
-       $(document).ready(function(){
-  $('.ba-slider').each(function(){
-    var cur = $(this);
-    // Adjust the slider
-    var width = cur.width()+'px';
-    cur.find('.resize img').css('width', width);
-    // Bind dragging events
-    drags(cur.find('.handle'), cur.find('.resize'), cur);
-  });
-});
+    <section id="section05">
+        <div class="border-box">
+            <div class="border_box_text text-center">
+                <h3>나만의 감성으로 완성하는<br>Galaxy Watch</h3>
+                <p>다양한 매치를 위한 여러 색상의<br>스트랩이 준비되어 있습니다.</p>
+                <p>그 날의 패션과 기분에 따라<br>어울리는 스트랩을 매치해보세요.</p>
+            </div>
 
-// Update sliders on resize. 
-// Because we all do this: i.imgur.com/YkbaV.gif
-$(window).resize(function(){
-  $('.ba-slider').each(function(){
-    var cur = $(this);
-    var width = cur.width()+'px';
-    cur.find('.resize img').css('width', width);
-  });
-});
-
-function drags(dragElement, resizeElement, container) {
-	
-  // Initialize the dragging event on mousedown.
-  dragElement.on('mousedown touchstart', function(e) {
-    
-    dragElement.addClass('draggable');
-    resizeElement.addClass('resizable');
-    
-    // Check if it's a mouse or touch event and pass along the correct value
-    var startX = (e.pageX) ? e.pageX : e.originalEvent.touches[0].pageX;
-    
-    // Get the initial position
-    var dragWidth = dragElement.outerWidth(),
-        posX = dragElement.offset().left + dragWidth - startX,
-        containerOffset = container.offset().left,
-        containerWidth = container.outerWidth();
- 
-    // Set limits
-    minLeft = containerOffset + 10;
-    maxLeft = containerOffset + containerWidth - dragWidth - 10;
-    
-    // Calculate the dragging distance on mousemove.
-    dragElement.parents().on("mousemove touchmove", function(e) {
-    	
-      // Check if it's a mouse or touch event and pass along the correct value
-      var moveX = (e.pageX) ? e.pageX : e.originalEvent.touches[0].pageX;
-      
-      leftValue = moveX + posX - dragWidth;
-      
-      // Prevent going off limits
-      if ( leftValue < minLeft) {
-        leftValue = minLeft;
-      } else if (leftValue > maxLeft) {
-        leftValue = maxLeft;
-      }
-      
-      // Translate the handle's left value to masked divs width.
-      widthValue = (leftValue + dragWidth/2 - containerOffset)*100/containerWidth+'%';
-			
-      // Set the new values for the slider and the handle. 
-      // Bind mouseup events to stop dragging.
-      $('.draggable').css('left', widthValue).on('mouseup touchend touchcancel', function () {
-        $(this).removeClass('draggable');
-        resizeElement.removeClass('resizable');
-      });
-      $('.resizable').css('width', widthValue);
-    }).on('mouseup touchend touchcancel', function(){
-      dragElement.removeClass('draggable');
-      resizeElement.removeClass('resizable');
-    });
-    e.preventDefault();
-  }).on('mouseup touchend touchcancel', function(e){
-    dragElement.removeClass('draggable');
-    resizeElement.removeClass('resizable');
-  });
-}
-
-
-
-    </script>
+        </div>
+    </section>
+    <section id="section06">
+    </section>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
+    <script src="js/js.js"></script>
+    <!-- <script>
         AOS.init();
-    </script>
+
+        $('.pink41').hover(function(){
+            $(this).on().animate({background:'#e9cccf'}, 500); },
+            function(){
+                $(this).stop().animate({background:'#000'}, 500);
+            });
+
+    </script> -->
 </body>
 </html>
