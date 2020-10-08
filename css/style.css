@@ -50,8 +50,7 @@ html,body{
     color: #fff;
 }
 .main-text{
-    padding-top: 120px;
-    
+    padding-top: 120px; 
 }
 .big-text{
     font-size: 45px;
@@ -131,8 +130,8 @@ html,body{
     margin-top: 8px;
 }
 .content02-img img{
-    width: 390px;
-    height: 380px;
+    width: 110%;
+    /* height: 380px; */
     position: relative;
     right: 14px;
 }
@@ -462,8 +461,29 @@ footer{
 
 /* footer end */
 @media(max-width: 767px){
-    .sec02-text{
+    .red{
+        font-size: 27px;
+    }
+    .blue{
+        font-size: 27px;
+    }
+    .main-text a{
+        text-decoration: none;
+        color: #fff;
+    }
+    .big-text{
         font-size: 35px;
+    }
+    .sub-text{
+        font-size: 22px;
+    }
+/* section01 end */
+    .content-main-text{
+        font-weight: bold;
+        font-size: 25px;
+    }
+    .sec02-text{
+        font-size: 30px;
     }
     .content01-img{
         width: 80%;
@@ -480,7 +500,6 @@ footer{
     .flex{
         flex-direction: column-reverse;
     }
-
     .well{
         width: 100%;
     }
@@ -502,18 +521,17 @@ footer{
     }
     /* section02 end */
     #section03{
-        padding-bottom: 100px;
+        padding-bottom: 80px;
         padding-top: 60px;
     }
     .sec03-text{
-        width: 60%;
-        font-size: 35px;
-        padding-top: 50px;
+        font-size: 30px;
+        padding-top: 25px;
         margin: 0 auto;
         line-height: 40px;
     }
     .sec03-subtext{
-        font-size: 20px;
+        font-size: 18px;
         padding-top: 0;
         padding-bottom: 50px;
     }
@@ -533,7 +551,7 @@ footer{
         font-size: 20px;
     }
     .sec04-text{
-        font-size: 35px;
+        font-size: 30px;
     }
     .galaxy-watch-img img{
         width: 60%;
