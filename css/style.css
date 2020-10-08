@@ -404,17 +404,63 @@ hr{
     height: auto;
     padding-bottom: 70px;
     padding-top: 40px;
-    background: #4c4c4c;
+    background: #181818;
     margin-top: 100px;
 }
 
 #section06 h1{
     padding-bottom: 40px;
     font-size: 40px;
-    color: #ccc;
+    color: #dcdcdc;
+}
+/* section06 end */
+
+
+footer{
+    width: 100%;
+    height: auto;
+    background: #0e0e0e;
+    color: #fff;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 10px 0;
+}
+.sec06-subtitle{
+    width: 230px;
+    height: 155px;
+    border: 1px solid #ccc;
+}
+.sec06-subtitle>.text-center{
+    padding: 4px 0;
+}
+.sec06-subtitle>.text-center>span{
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 5px;
+    display: block;
+    line-height: 25px;
+}
+.sec06-subtitle>.text-center> p{
+    font-size: 12px;
+    color: #fff;
+    padding-bottom: 5px;
+    line-height: 15px;
+}
+.sec06-subtitle>.text-center>a{
+    border: 1px solid #fff;
+    padding: 5px 15px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+}
+.sec06-subtitle>.text-center>a:hover{
+    background: #fff;
+    color: #000;
+    font-weight: bold;
 }
 
-
+/* footer end */
 @media(max-width: 767px){
     .sec02-text{
         font-size: 35px;
@@ -501,54 +547,10 @@ hr{
     }
     .sec06-subtitle{
         width: 250px;
-        height: 250px;
+        height: 150px;
         border: 1px solid #ccc;
         margin: 0 auto;
         margin-top: 30px;
     }
     /* section06 end */
-}
-
-footer{
-    width: 100%;
-    height: auto;
-    background: #000;
-    color: #fff;
-    font-size: 11px;
-    line-height: 20px;
-    padding: 10px 0;
-}
-.sec06-subtitle{
-    width: 230px;
-    height: 155px;
-    border: 1px solid #ccc;
-}
-.sec06-subtitle>.text-center{
-    padding: 4px 0;
-}
-.sec06-subtitle>.text-center>span{
-    font-size: 16px;
-    color: #fff;
-    text-align: center;
-    padding-bottom: 5px;
-    display: block;
-    line-height: 25px;
-}
-.sec06-subtitle>.text-center> p{
-    font-size: 12px;
-    color: #fff;
-    padding-bottom: 5px;
-    line-height: 15px;
-}
-.sec06-subtitle>.text-center>a{
-    border: 1px solid #fff;
-    padding: 5px 15px;
-    color: #fff;
-    text-decoration: none;
-    font-size: 15px;
-}
-.sec06-subtitle>.text-center>a:hover{
-    background: #fff;
-    color: #000;
-    font-weight: bold;
 }

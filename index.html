@@ -56,19 +56,8 @@
             <button onclick="topFunction()" id="scrollTopBtn" title="Go to top">Top</button>
         </div>
     </section>
-    <script>
-        window.onscroll = function() {scrollFunction()};
-    
-        function scrollFunction() {
-        var $element = matchMedia("screen and (min-width: 786px)").matches ? document.getElementById("scrollTopBtn") : document.getElementById("scrollTopBtnMob");
-        $element.style.display = (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) ? 'block' : 'none';
-        }
-        
-        function topFunction() {
-            $('html,body').animate({ scrollTop: 0 }, 500);
-        }
-    </script>
     <!-- section01 end-->
+    
     <section id="section02">
         <div class="container padding">
             <h1 class="sec02-text text-center">차별화된 Galaxy Watch의 기능</h1>
@@ -223,16 +212,13 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-9 text-left">
-                    <p>* 사용자 메모리는 OS의 용량과 모바일 기기의 기능을 작동시키는 소프트웨어에 사용되기 때문에 전체 메모리보다 작습니다.<br>
-                    실제 사용자 메모리는 모바일 기기 사용자에 따라 달라지며, 소프트웨어 업그레이드 이후에도 달라질 수 있습니다.<br>
+                    <p>* 실제 사용자 메모리는 모바일 기기 사용자에 따라 달라지며, 소프트웨어 업그레이드 이후에도 달라질 수 있습니다.<br>
                     
                     * 제공된 설명은 실제 제품에 대한 설명과 다를 수 있습니다.제품 사진 및 특장점 등에는 광고적 표현이 포함되어 실제와 다를 수 있습니다.<br>
                     
                     * 제품 사진 및 특장점 등에는 광고적 표현이 포함되어 실제와 다를 수 있으며, 제품 스펙은 제품 개량을 위해 사전 예고 없이 변경될 수 있습니다.<br>
                     
                     * 제품색상은 모니터에 따라 약간 다를 수 있습니다.<br>
-                    
-                    * 해당 모델은 구입처에 따라 취급여부가 다를 수 있습니다.<br>
                     
                     * 애플리케이션이나 서비스들은 제공 사업자 사정에 의하여 예고 없이 변경/중단될 수 있습니다.</p>
                 </div>
