@@ -440,56 +440,49 @@ hr{
 
 /* section05 end */
 
-#section06 img{
-    width: 80%;
-}
-
-/* #section06{
+#section06{
     width: 100%;
-    height: 150px;
+    height: auto;
+    padding: 25px 0;
+    background: #4c4c4c;
+    margin-top: 100px;
 }
 
 #section06 h1{
-    color: #ccc;
+    padding-bottom: 20px;
     font-size: 40px;
-    padding-top: 30px;
+    color: #ccc;
 }
-.call{
-    color: #fff;
-    font-size: 20px;
-    margin-right: 15px;
+.sec06-subtitle{
+    width: 250px;
+    height: 250px;
+    border: 1px solid #ccc;
 }
-.day{
-    color: #fff;
-    font-size: 15px;
+.sec06-subtitle>.text-center{
+    padding: 25px 0;
 }
-#section06 a{
+.sec06-subtitle>.text-center>span{
+    font-size: 25px;
     color: #fff;
+    text-align: center;
+}
+.sec06-subtitle>.text-center> p{
+    font-size: 17px;
+    color: #fff;
+}
+.sec06-subtitle>.text-center>a{
     border: 1px solid #fff;
+    padding: 10px 20px;
+    color: #fff;
     text-decoration: none;
-    width: 100px;
-    height: 35px;
-    line-height: 35px;
-    margin-left: 30px;
+    font-size: 18px;
 }
-.end-text{
-    width: 100%;
+.sec06-subtitle>.text-center>a:hover{
+    background: #fff;
+    color: #000;
+    font-weight: bold;
 }
-#section06 .col-md-12{
-    padding: 0 0;
-}
-.inner-text{
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #5a5a5a;
-    width: 500px;
-    height: 260px;
-}
-.inner-text>a:hover {
-    background: #901b34;
-} */
+
 @media(max-width: 767px){
     .sec02-text{
         font-size: 35px;
@@ -553,7 +546,7 @@ hr{
     }
     .img2{
         width: 150px;
-        left: 150px;
+        left: 32%;
         top: 15px;
     }
 /* section03 end */
@@ -573,5 +566,12 @@ hr{
     #section06 img{
         width: 100%;
     }
-    
+    .sec06-subtitle{
+        width: 250px;
+        height: 250px;
+        border: 1px solid #ccc;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    /* section06 end */
 }
