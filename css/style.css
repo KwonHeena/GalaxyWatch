@@ -117,41 +117,55 @@ html,body{
     font-size: 45px;
     padding-top: 50px;
 }
-.content01-img img{
-    width: 100%;
-    margin-top: 8px;
-}
-.content02-img img{
-    width: 100%;
-    margin-top: 8px;
-}
-.content03-img img{
-    width: 100%;
-    margin-top: 8px;
-}
-.content01-img:hover{
-    border-radius: 20px;
-    box-shadow: 1px 1px 2px 1px gray;
-    transition: .1s;
-}
-.content02-img:hover{
-    border-radius: 20px;
-    box-shadow: 1px 1px 2px 1px gray; 
-    transition: 0.1s;
-}
-.content03-img:hover{
-    border-radius: 20px;
-    box-shadow: 1px 1px 2px 1px gray; 
-    transition: 0.1s;
-}
 .content-main-text{
     font-weight: bold;
     font-size: 30px;
 }
 .content-sub-text{
     font-size: 16px;
-    line-height: 35px;
+    line-height: 30px;
     color: #a1a1a1;
+}
+.content01-img img{
+    width: 100%;
+    margin-top: 8px;
+}
+.content02-img img{
+    width: 390px;
+    height: 380px;
+    position: relative;
+    right: 14px;
+}
+.content03-img img{
+    width: 100%;
+    margin-top: 8px;
+}
+.scale:hover img{
+    transform:scale(1.1); /* 마우스 오버시 이미지 크기를 1.1 배만큼 확대시킨다. */
+    -o-transform:scale(1.1); 
+    -moz-transform:scale(1.1);
+    -webkit-transform:scale(1.1);
+}
+.content01-img:hover{
+    border-radius: 20px;
+    background: #e4f5b4;
+}
+.content01-img:hover .content-sub-text{
+    color: #000;
+}
+.content02-img:hover{
+    border-radius: 20px;
+    background: #e9b2aa;
+}
+.content02-img:hover .content-sub-text{
+    color: #000;
+}
+.content03-img:hover{
+    border-radius: 20px;
+    background: #c3ecfd;
+}
+.content03-img:hover .content-sub-text{
+    color: #000;
 }
 .sec02-sub-text{
     padding-top: 15%;
@@ -229,11 +243,11 @@ hr{
 100%{transform:translateY(10px);}
 
 }
+
 .img2{
-    width: 270px;
+    width: 17%;
     position: absolute;
-    left: 680px;
-    top: 70px;
+    right: 41%;
 }
 /* section03 end */
 
@@ -275,20 +289,16 @@ hr{
     padding: 7px 15px;
     border-radius: 30px;
 }
-.pink41{
-    border: 1px solid #333;
-    border-radius: 40px;
-    padding: 15px 5px;
-    transition: all 0.5s ease-in-out;
-}
-.pink41:hover a{
-    z-index: 99;
-}
 #section04 a{
     text-decoration: none;
     color: inherit;
 }
-.gradient-border {
+.gradient-border{
+    border: 1px solid #333;
+    border-radius: 40px;
+    padding: 8px;
+}
+/* .gradient-border {
     margin: 0 auto;
     --border-width: 1px;
     position: relative;
@@ -297,7 +307,6 @@ hr{
     align-items: center;
     width: 120px;
     height: 40px;
-    font-family: Lato, sans-serif;
     font-size: 18px;
     background: #fff;
     border-radius: 40px;
@@ -330,49 +339,75 @@ hr{
   50% {
     background-position: 100% 50%;
   }
+} */
+.galaxy-watch-text{
+    color: #000 !important;
+}
+.pink41{
+    border: 1px solid #ccc;
+    border-radius: 40px;
+    padding: 20px 10px;
+    transition: all 0.5s ease-in-out;
+}
+.pink41:hover a{
+    background: #333;
+    z-index: 99;
+    transition: 0.3s;
 }
 .pink41:hover{
-    background-color: #e9cccf;
+    background: #e9cccf;
     transition: all 0.3s ease-in-out;
+    color: #fff;
 }
 .silver41{
-    border: 1px solid #333;
+    border: 1px solid #ccc;
     border-radius: 40px;
     padding: 20px 10px;
     transition: all 0.5s ease-in-out;
 }
 .silver41:hover a{
+    background: #333;
     z-index: 99;
+    transition: 0.3s;
 }
 .silver41:hover{
     background: #ccc;
     transition: all 0.3s ease-in-out;
+    color: #fff;
 }
 .black45{
-    border: 1px solid #333;
+    border: 1px solid #ccc;
     border-radius: 40px;
     padding: 20px 10px;
     transition: all 0.5s ease-in-out;
 }
 .black45:hover a{
     z-index: 99;
+    border: 1px solid #ccc;
+    transition: 0.3s;
 }
 .black45:hover{
-    background-color: lightblue;
+    background-color: #333;
+    color: #fff;
     transition: all 0.3s ease-in-out;
 }
 .silver45{
-    border: 1px solid #333;
+    border: 1px solid #ccc;
     border-radius: 40px;
     padding: 20px 10px;
     transition: all 0.5s ease-in-out;
 }
 .silver45:hover a{
+    background: #333;
     z-index: 99;
+    transition: 0.3s;
 }
 .silver45:hover{
-    background-color: #ccc;
+    background: #ccc;
     transition: all 0.3s ease-in-out;
+    color: #fff;
+    border: 1px solid #ccc;
+    
 }
 .col-md-3{
     width: 24%;
@@ -391,6 +426,7 @@ hr{
     width: 350px;
     height: 230px;
     border: none;
+    border-radius: 20px;
     padding-top: 5px;
     margin: 0 auto;
     background: rgba(0, 0, 0, 0.5);
@@ -401,36 +437,86 @@ hr{
 .border-box p{
     font-size: 20px;
 }
-#section06{
-    width: 100%;
-    height: 500px;
-    background: coral;
+
+/* section05 end */
+
+#section06 img{
+    width: 80%;
 }
 
+/* #section06{
+    width: 100%;
+    height: 150px;
+}
+
+#section06 h1{
+    color: #ccc;
+    font-size: 40px;
+    padding-top: 30px;
+}
+.call{
+    color: #fff;
+    font-size: 20px;
+    margin-right: 15px;
+}
+.day{
+    color: #fff;
+    font-size: 15px;
+}
+#section06 a{
+    color: #fff;
+    border: 1px solid #fff;
+    text-decoration: none;
+    width: 100px;
+    height: 35px;
+    line-height: 35px;
+    margin-left: 30px;
+}
+.end-text{
+    width: 100%;
+}
+#section06 .col-md-12{
+    padding: 0 0;
+}
+.inner-text{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #5a5a5a;
+    width: 500px;
+    height: 260px;
+}
+.inner-text>a:hover {
+    background: #901b34;
+} */
 @media(max-width: 767px){
     .sec02-text{
         font-size: 35px;
     }
-    
-    .content01-img:hover{
-        border: none;
-        border-radius: 0px;
-        box-shadow: 0 0 0 #fff;
-        transition: 0;
+    .content02-img img{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        right: 0px;
     }
-    .content02-img:hover{
-        border-radius: 0px;
-        box-shadow: 0 0 0 #fff;
-        transition: 0;
+    .content01-img img{
+        width: 85%;
+        margin-top: 8px;
+        position: relative;
+        left: 35px;
     }
+    .content03-img img{
+        width: 85%;
+        margin-top: 8px;
+        position: relative;
+        left: 35px;
+    }
+    /* section02 end */
     .flex{
         flex-direction: column-reverse;
     }
-    .content03-img:hover{
-        border-radius: 0;
-        box-shadow: 0 0 0 #fff;
-        transition: 0.1s;
-    }
+
     .well{
         width: 100%;
     }
@@ -478,8 +564,14 @@ hr{
         margin-bottom: 30px;
         font-size: 20px;
     }
-}
-
-.sec04-text{
-    font-size: 35px;
+    .sec04-text{
+        font-size: 35px;
+    }
+    #section06 h1{
+        font-size: 30px;
+    }
+    #section06 img{
+        width: 100%;
+    }
+    
 }
