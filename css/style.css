@@ -53,10 +53,10 @@ html,body{
     padding-top: 120px; 
 }
 .big-text{
-    font-size: 45px;
+    font-size: 55px;
 }
 .sub-text{
-    font-size: 30px;
+    font-size: 35px;
     color: #b5b5b5;
 }
 .bar{
@@ -68,14 +68,14 @@ html,body{
     top: 10px;
 }
 .red{
-    font-size: 35px;
+    font-size: 40px;
     font-weight: bold;
     color: #fff;
     /* color: #990000; */
 }
 .blue{
     /* color: #003399; */
-    font-size: 35px;
+    font-size: 40px;
     font-weight: bold;
     color: #fff;
 }
@@ -147,21 +147,21 @@ html,body{
 }
 .content01-img:hover{
     border-radius: 20px;
-    background: #e4f5b4;
+    background: #f3ffd3;
 }
 .content01-img:hover .content-sub-text{
     color: #000;
 }
 .content02-img:hover{
     border-radius: 20px;
-    background: #e9b2aa;
+    background: #ffe3df ;
 }
 .content02-img:hover .content-sub-text{
     color: #000;
 }
 .content03-img:hover{
     border-radius: 20px;
-    background: #c3ecfd;
+    background: #def5ff;
 }
 .content03-img:hover .content-sub-text{
     color: #000;
@@ -195,6 +195,7 @@ hr{
 }
 .sec02-txt{
     font-size: 18px;
+    letter-spacing: 1px;
 }
 .help{
     width: 730px;
@@ -349,6 +350,10 @@ hr{
     color: #fff;
     transition: all 0.3s ease-in-out;
 }
+.black45:hover p{
+    color: #ececec;
+    transition: all 0.3s ease-in-out;
+}
 .silver45{
     border: 1px solid #ccc;
     border-radius: 40px;
@@ -382,7 +387,7 @@ hr{
 }
 .border-box{
     width: 350px;
-    height: 230px;
+    height: 215px;
     border: none;
     border-radius: 20px;
     padding-top: 5px;
@@ -390,10 +395,11 @@ hr{
     background: rgba(0, 0, 0, 0.5);
     color: #fff;
     position: relative;
-    top: 80px;
+    top: 95px;
 }
 .border-box p{
     font-size: 20px;
+    line-height: 27px;
 }
 
 /* section05 end */
@@ -512,6 +518,7 @@ footer{
     }
     .sec02-txt{
         font-size: 16px;
+
     }
     .help{
         width: 100%;
